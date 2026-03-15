@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="es-CL"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Cómo funciona | Transportes KAPA</title><meta name="description" content="Retiro AM hasta las 14:00, consolidación/etiquetado y entrega same‑day a courier"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"/><link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png"/><link rel="icon" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-180.png"/><meta property="og:image" content="https://transporteskapa.cl/assets/og-kapa.png"/><meta name="theme-color" content="#0E5AA7"/><style> :root{ --kapa-orange:#F26A21; --kapa-orange-soft:#FF8F55; --kapa-blue:#0E5AA7; --kapa-green:#6CB33E; --kapa-asphalt:#4A4A4A; --kapa-ink:#1F2A37; --kapa-bg:#F7FAFC; --white:#FFFFFF; --radius:14px; --shadow: 0 10px 24px rgba(13, 53, 112, 0.12); --shadow-soft: 0 6px 16px rgba(0,0,0,0.08); --maxw: 1200px; --whatsapp-green:#25D366; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--kapa-bg);color:var(--kapa-ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,'Noto Sans','Liberation Sans',sans-serif;line-height:1.5}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--kapa-blue);text-decoration:none}
+.container{max-width:var(--maxw);margin-inline:auto;padding:clamp(16px,3vw,28px)}
+header{background:linear-gradient(180deg,#ffffff 0%,#F2F7FD 100%)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:16px}
+.brand span{font-weight:900;letter-spacing:.4px;color:var(--kapa-blue);font-size:clamp(22px,3.2vw,30px)}
+.nav-cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{appearance:none;border:none;border-radius:999px;padding:12px 18px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:filter .18s ease, box-shadow .18s ease, background-color .18s ease}
+.btn-primary{background:var(--kapa-blue);color:var(--white)} .btn-primary:hover{filter:brightness(1.06)}
+.btn-ghost{background:transparent;border:2px solid var(--kapa-blue);color:var(--kapa-blue)} .btn-ghost:hover{background:rgba(14,90,167,.06)}
+.btn-onwhite { color:#FFFFFF !important; border:2px solid #FFFFFF !important; }
+.btn-piloto { background: var(--kapa-orange) !important; }
+.btn-wa { background: var(--whatsapp-green) !important; }
+.btn-piloto:hover, .btn-wa:active { filter:brightness(1.05); box-shadow:0 0 0 3px rgba(242,106,33,.18); }
+.btn-wa:hover, .btn-wa:active { filter:brightness(1.05); box-shadow:0 0 0 3px rgba(37,211,102,.18); }
+.btn-piloto:focus-visible, .btn-wa:focus-visible { outline:none; box-shadow:0 0 0 3px rgba(255,255,255,.9), 0 0 0 6px rgba(0,0,0,.18); }
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding-block:clamp(20px,3vw,30px)}
+.hero h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 10px}
+.hero p.lead{font-size:clamp(16px,2.2vw,20px);margin:0 0 18px;color:#334155}
+.hero-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+.hero-card h2{color:var(--kapa-green)}
+.checks{list-style:none;margin:0;padding-left:0}
+.checks li{position:relative;padding-left:28px;margin:10px 0}
+.checks li::before{content:"✓";position:absolute;left:0;top:0;color:var(--kapa-green);font-weight:900}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.badge{background:var(--kapa-green);color:#09310e;font-weight:700;border-radius:999px;padding:6px 10px;font-size:13px}
+.tag{background:#E9F2FB;color:#0B4C8C;border:1px solid #CFE3F8;border-radius:999px;padding:6px 10px;font-size:13px;font-weight:700}
+.section-title{font-size:clamp(22px,3vw,30px);margin: 0 0 8px}
+.section-sub{color:#475569;margin:0 0 22px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:22px;border:1px solid #E6EEF8;display:flex;flex-direction:column}
+.plan h3{margin:6px 0 8px;font-size:clamp(18px,2.4vw,22px);color:var(--kapa-blue)}
+.plan .pill{display:inline-block;background:#FFF3EC;color:var(--kapa-orange);border:1px solid #FFD8C1;border-radius:999px;padding:4px 10px;font-weight:800;font-size:12px}
+.plan ul{margin:14px 0;padding-left:18px}
+.plan li{margin:8px 0}
+.plan .cta{margin-top:auto}
+.personas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:20px;border:1px solid #E6EEF8}
+.card h4{margin:0 0 8px;color:var(--kapa-orange-soft)}
+.tagline{color:#475569;font-size:14px}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+details{background:#fff;border-radius:var(--radius);border:1px solid #E6EEF8;padding:14px 18px}
+details[open]{box-shadow:var(--shadow-soft)}
+summary{cursor:pointer;font-weight:800;color:#0B4C8C;font-style:italic}
+summary::before{content:'“';margin-right:4px;color:#94a3b8}
+summary::after{content:'…”';margin-left:4px;color:#94a3b8}
+.answer{padding-top:8px;color:#334155;border-left:4px solid var(--kapa-green);padding-left:12px}
+.cta-strip{background:linear-gradient(90deg,var(--kapa-blue),#1872d4);color:#fff;border-radius:var(--radius);padding:22px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+footer{margin-top:40px;border-top:1px solid #E6EEF8;background:#fff}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px;padding-block:20px}
+.muted{color:#64748b;font-size:14px}
+@media (max-width:900px){ .hero{grid-template-columns:1fr} .plans,.personas,.faq{grid-template-columns:1fr} .footer-grid{grid-template-columns:1fr} }
+.btn-info{background:#fff;color:var(--kapa-orange);border:2px solid var(--kapa-orange);font-weight:800;border-radius:999px;padding:12px 18px;} .btn-info:hover{filter:brightness(1.05);} 
+.brand img{height:84px;width:auto}
+@media (max-width:900px){.brand img{height:64px}}
+.media img{display:block;height:auto}
+.media figcaption{color:#64748b}
+</style></head><body><header><div class="container"><nav aria-label="Principal"><a class="brand" aria-label="Inicio" href="/index.html"><img src="/assets/logo-kapa-sin-fondo.png" alt="Transportes KAPA"/><span>TRANSPORTES KAPA</span></a><div class="nav-cta" role="group" aria-label="Contactos rápidos"><a class="btn btn-ghost" href="mailto:transporteskapa@gmail.com?subject=Consulta%20KAPA">Escríbenos</a><a class="btn btn-wa btn-onwhite" href="https://wa.me/56966741028" target="_blank" rel="noopener">WhatsApp</a></div></nav></div></header><main class="container"><section class="hero" style="grid-template-columns:1fr;"><div><h1>Cómo funciona Transportes KAPA</h1><p class="lead">Proceso simple y predecible para que cumplas el corte sin carreras.</p></div></section><section style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;"><div class="card"><h3>1) Retiro AM</h3><p>Hasta las <strong>14:00</strong> en ventana clara y predecible.</p></div><div class="card"><img src="/assets/img/checklist.png" alt="Checklist de consolidación"/><h3>2) Consolidación / Etiquetado</h3><p>Consolidamos y controlamos conteo. Etiquetado térmico en KAPA Full.</p></div><div class="card"><h3>3) Entrega a courier</h3><p>Same‑day a Blue Express / Chilexpress con evidencia.</p></div></section></main><footer><div class="container footer-grid" aria-label="Información del sitio"><div><img src="/assets/logo-kapa-sin-fondo.png" alt="Transportes KAPA" style="height:58px;width:auto"/><p class="muted">Primera milla para e‑commerce en RM. Retiro AM (hasta las 14:00), consolidación/etiquetado PM y entrega a courier el mismo día.</p></div><div><strong>Contacto</strong><ul style="list-style:none;padding:0;margin:8px 0"><li><a href="mailto:transporteskapa@gmail.com">transporteskapa@gmail.com</a></li><li><a href="https://wa.me/56966741028" target="_blank" rel="noopener">WhatsApp: +56 9 6674 1028</a></li><li><a href="https://transporteskapa.cl" target="_blank" rel="noopener">transporteskapa.cl</a></li></ul></div><div><strong>Horarios</strong><ul style="list-style:none;padding:0;margin:8px 0"><li>Lun–Vie · 09:00–18:00</li><li>Retiro AM (hasta las 14:00) · Entrega PM</li></ul></div></div><div class="container" style="padding-top:0;padding-bottom:24px"><p class="muted">© <span id="y"></span> Transportes KAPA. Todos los derechos reservados.</p></div><script>document.getElementById('y').textContent=new Date().getFullYear();</script></footer></body></html>
